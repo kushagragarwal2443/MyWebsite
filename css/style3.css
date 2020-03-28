@@ -1,0 +1,116 @@
+*{
+	margin:0%;
+	padding:0%;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 1.4vw;
+	background-color:rgba(255,10,10,0.7);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.navlist{
+	padding-left: 20%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	position:fixed;
+	width:100%;
+	background-color: black;
+	z-index: 10;
+
+}
+
+.navlist li{
+	display: inline-block;
+	list-style: none;
+	align-items: center;
+	margin-left: 5%;
+	border:0.1vw solid rgba(250,0,100,0.99);
+	padding:0.4vw;
+}
+.navlist li a{
+	color: rgba(250,0,100,0.99);
+	text-decoration: none;
+	font-size: 110%;
+	font-weight: 50;
+}
+
+.navlist li.current a{
+	color:rgba(255,255,255,0.99);
+}
+
+.navlist li.current{
+	border:0.1vw solid rgba(255,255,255,0.99);
+	padding:0.4vw;
+}
+
+.navlist li.noncurrent a:hover{
+	color:rgba(255,255,255,0.99);
+	
+}
+
+.navlist li.current a:hover{
+	color:orange;
+	
+}
+
+.like{
+	padding-top:7%;
+	margin-left: 80%;	
+
+
+}
+
+.likeit{
+	height:5vw;
+}
+
+#value{
+	padding:4%;
+	font-size: 80%;
+	width:27.2%;
+	background-color: black;
+	color:red;
+}
+
+.table1
+{
+	position: relative;
+	top:5vw;
+	left:25vw;
+}
+.table1 table
+{
+	border-collapse: collapse;
+	width: 50%;
+}
+
+.table1 th{
+	color:red;
+}
+.table1 table,td,th
+{
+	border: 0.2vw solid white;
+	text-align: center;
+	font-size: 2vw;
+	background-color:rgba(0,0,0,0.7);
+	color: white;
+}
+.table1 td
+{
+	font-size: 1.5vw;
+}
+
+.inputting{
+	position: relative;
+	top:1vw;
+	left:10vw;
+}
+
+.buttonsubmit{
+	position: relative;
+	top:1vw;
+	left:10vw;
+}

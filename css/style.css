@@ -1,0 +1,235 @@
+*{
+	margin:0%;
+	padding:0%;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 1.4vw;
+	background-size: cover;
+	background-image: linear-gradient(rgba(30,30,30,0.6),rgba(30,30,30,0.6)), url('https://imgnooz.com/sites/default/files/wallpaper/celebrities/58609/steve-jobs-wallpapers-58609-2133571.jpg');
+	background-repeat: no-repeat;
+	animation: chbg 10s infinite alternate;
+	height:100%;
+}
+
+.navlist{
+	padding-top: 1.4%;
+	padding-bottom: 1.4%;
+	padding-left: 20%;
+	background-color: black;
+
+}
+
+.navlist li{
+	display: inline-block;
+	list-style: none;
+	align-items: center;
+	margin-left: 5%;
+	padding:0.4vw;
+}
+.navlist li a{
+	color: white;
+	text-decoration: none;
+	font-size: 110%;
+	font-weight: 50;
+}
+
+
+#demo{
+	
+	font-size: 3.1vw;
+	color:rgba(255,0,0,0.9);
+	margin-left: 5%;
+}
+
+
+
+#funfacts{
+	margin-top: 4%;
+	padding-top: 3%;
+	margin-left: 8%;
+	font-size: 275%;
+	color: orange;
+	font-weight: 530;
+	align-content: center;
+}
+
+#funfacts2{
+	
+	padding-top: 3%;
+	margin-left: 8%;
+	font-size: 275%;
+	color: white;
+	font-weight: 530;
+	align-content: center;
+}
+
+#funfacts3{
+	
+	padding-top: 3%;
+	margin-left: 8%;
+	font-size: 265%;
+	font-weight: 530;
+	color: rgba(0,255,0,0.8);
+	align-content: center;
+}
+
+.navlist li.current a{
+	color: orange;
+}
+
+.navlist li.current{
+	border:0.1vw solid orange;
+}
+
+.navlist li.noncurrent a:hover{
+	color:orange;
+	
+}
+
+.navlist li.current a:hover{
+	color: black;
+}
+
+.navlist li.current:hover{
+	border:0.1vw solid white;
+}
+
+p{
+  color: lime; 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+
+p:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+p a{
+  color: lime;
+  text-decoration: none;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+
+
+
+
+/*for icons of social media*/
+
+.fa {
+  margin-top: 8%;
+  font-size: 50vw;
+  width: 5%;
+  border-radius: 25%;
+  text-align: center;
+  text-decoration: none;
+  padding: 1.5%;
+  margin-bottom: 4%;
+  transition: transform 0.1s;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  transform: scale(1.5);
+}
+
+
+.fa-facebook {
+	margin-left: 20%;
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-instagram {
+	margin-left: 2%;
+  background: rgba(255,0,80,0.8);
+  color: white;
+}
+
+.fa-github {
+	margin-left: 2%;
+  background:rgba(60,60,60,0.9);
+  color: white;
+}
+
+.fa-linkedin {
+	margin-left: 2%;
+  background:#007bb5;
+  color: white;
+}
+
+
+/*changing backgorunds*/
+
+@keyframes chbg {
+  100% {
+  background-image: linear-gradient(rgba(30,30,30,0.6),rgba(30,30,30,0.6)), url('../images/steve jobs sorted.jpg');
+  background-size:cover;
+  }
+ 0% {
+    background-image: linear-gradient(rgba(20,20,20,0.6),rgba(20,20,20,0.6)),url("https://cdn.vox-cdn.com/thumbor/rKsuDomhiPuhzCVBpmNzPFV6A6A=/0x0:5622x3722/1200x800/filters:focal(2362x1412:3260x2310)/cdn.vox-cdn.com/uploads/chorus_image/image/58766173/850286096.jpg.0.jpg");
+  background-size:cover;
+  }
+  33% {
+    background-image: linear-gradient(rgba(20,20,20,0.7),rgba(20,20,20,0.7)),url("https://www.desktopbackground.org/download/1024x768/2014/06/24/782869_master-blaster-sachin-tendulkar-wallpapers_3000x2131_h.jpg");
+  background-size:cover;
+  }
+  66% {
+    background-image: linear-gradient(rgba(10,10,10,0.8),rgba(10,10,10,0.8)),url("https://amp.businessinsider.com/images/5a8c488ad03072d6038b468a-1920-960.jpg");
+    background-size:cover;
+  }
+}
+
+
+
+
+/*navbar animations*/
+.current{
+  display:inline-block;
+  position:relative;
+  margin:0.4%;  padding:1%;
+  cursor:pointer; 
+  color:white;
+  z-index:10;
+
+}
+.current:before {
+  content: "";
+  position: absolute;
+
+  top: 0;  left: 0;  right: 0;  bottom: 0;
+  background:orange;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 1s ease-out;
+}
+.current:hover:before{transform: scaleX(1);}

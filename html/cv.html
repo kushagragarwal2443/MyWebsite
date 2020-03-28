@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CV</title>
+	<link rel="stylesheet" type="text/css" href="../css/style2.css">
+</head>
+
+<body>
+	<header>
+		<div class="navlist">
+			<ul>
+				<li class="noncurrent"><a href="index.html">KUSHAGRA</a></li>
+				<li class="noncurrent"><a href="knowmemore.html">KNOW ME MORE</a></li>
+				<li class="current"><a href="cv.html">MY PICS</a></li>
+				<li class="noncurrent"><a href="quiz.html">PLAY MY QUIZ</a></li>
+			</ul>
+		</div>
+		<div class="container">
+		<img class="mySlides" src="../images/DSC05238.JPG" border="20%" >
+		<img class="mySlides" src="../images/DSC_0056.JPG" border="20%">
+		<img class="mySlides" src="../images/DSC_0645.JPG" border="20%">
+		<img class="mySlides" src="../images/DSC_0662.JPG" border="20%">
+		<img class="mySlides" src="../images/DSC_0661.JPG" border="20%">
+		<button class="btn" onclick="plusDivs(+1)">&#10095;</button>
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+ 			showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+  				var i;
+  				var x = document.getElementsByClassName("mySlides");
+  				if (n > x.length) {slideIndex = 1} 
+  				if (n < 1) {slideIndex = x.length} ;
+  				for (i = 0; i < x.length; i++) {
+   				x[i].style.display = "none"; 
+  				}
+  				x[slideIndex-1].style.display = "block"; 
+				}
+		</script>
+		</div>
+	</header>
+
+
+</body>
+
+
+</html>

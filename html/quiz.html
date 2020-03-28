@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CV</title>
+	<link rel="stylesheet" type="text/css" href="../css/style3.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+	<div class="navlist">
+			<ul>
+				<li class="noncurrent"><a href="index.html">KUSHAGRA</a></li>
+				<li class="noncurrent"><a href="knowmemore.html">KNOW ME MORE</a></li>
+				<li class="noncurrent"><a href="cv.html">MY PICS</a></li>
+				<li class="current"><a href="quiz.html">PLAY MY QUIZ</a></li>
+			</ul>
+		</div>
+	<div class="like">
+	<script src="../javascript/quiz.js"></script>
+	<button type="button" onclick="Count()"><img src="https://b.kisscc0.com/20180705/ew/kisscc0-love-hearts-download-heart-5b3e5579c18a63.8370080515308117697928.png" alt="i love myself" class="likeit"></button>
+	<p id="value"></p>
+	</div>
+
+	<div id="input">
+		<p class="inputting">
+			<label>NAME</label>
+			<input type="text" name="name" id="nm">
+			<label>SKILL</label>
+			<select name="skill" id="sk">
+				<option value="CRICKET">CRICKET</option>
+				<option value="CODING">CODING</option>
+				<option value="SINGING">SINGING</option>
+			</select>
+			<label>LEVEL</label>
+			<select name="level" id="lvl">
+				<option value="BOND">BOND</option>
+				<option value="OK">OK</option>
+				<option value="FAKKA">FAKKA</option>
+			</select>
+		<div class="buttonsubmit"><button type="button" onclick="add()">SUBMIT</button></div>
+	</p>
+	</div>
+
+
+	<div class="table1">
+		<table id="tl">
+			<thead>
+				<th colspan="3">KUSH RESULTS</th>
+			</thead>
+			<thead>
+				<th>NAME</th>
+				<th>SKILL</th>
+				<th>LEVEL</th>
+			</thead>
+			<tbody id="tbody">
+			</tbody>
+		</table>
+	</div>
+
+</body>
+</html>
+
